@@ -1,0 +1,8 @@
+# Office 临时文件
+~$*
+*.tmp
+*.bak
+
+# Windows
+Thumbs.db
+Desktop.ini
