@@ -6,3 +6,7 @@
 # Windows
 Thumbs.db
 Desktop.ini
+
+# 字体文件太大，不上传（Windows 自带，编译时本地已有）
+*.ttf
+*.ttc
