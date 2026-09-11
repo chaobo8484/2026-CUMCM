@@ -49,17 +49,8 @@ def div(a, b):
     return r.round(ROUND)
 
 
-def tag(df, mask, label):
-    """给满足 mask 的行在'异常标记'列追加 label（分号分隔），返回命中数."""
-    if "异常标记" not in df.columns:
-        df["异常标记"] = ""
-    hit = mask.fillna(False).astype(bool)
-    df.loc[hit, "异常标记"] = (df.loc[hit, "异常标记"] + label + ";").str.strip(";")
-    return int(hit.sum())
-
-
-def check_hard_rules(s1):
-    """A类硬规则：逻辑上不可能成立的关系，出现即数据错误（本题应为0）。"""
+def check_logic(s1):
+    """逻辑一致性校验：层级包含与消费↔点击对应关系（应全为0，结果仅作质量证据）。"""
     rules = {
         "点击>展现": s1["点击量"] > s1["展现量"],
         "上方位展现>总展现": s1["上方位展现量"] > s1["展现量"],
@@ -69,7 +60,7 @@ def check_hard_rules(s1):
         "有消费无点击": (s1["消费额"] > 0) & (s1["点击量"] == 0),
         "有点击无消费": (s1["点击量"] > 0) & (s1["消费额"] == 0),
     }
-    print("--- A类硬规则检查（应全为0） ---")
+    print("--- 逻辑一致性校验（应全为0） ---")
     for label, m in rules.items():
         print(f"{label}: {int(m.sum())}")
     print()
@@ -94,11 +85,7 @@ def main():
     s1["首位展现占比"] = div(s1["上方首位展现量"], s1["展现量"])
     s1["上方位点击占比"] = div(s1["上方位点击量"], s1["点击量"])
     s1["上方位消费占比"] = div(s1["上方位消费额"], s1["消费额"])
-    check_hard_rules(s1)  # A类：逻辑硬规则（本题全0）
-    # B类：CTR极高（≥P99，运行时计算阈值，仅标记不删除）
-    ctr_p99 = float(s1["CTR"].quantile(0.99))
-    n = tag(s1, s1["CTR"] >= ctr_p99, "CTR极高")
-    print(f"B类 Sheet1: CTR极高阈值(P99)={ctr_p99:.4f}，命中 {n} 行")
+    check_logic(s1)  # 逻辑一致性校验（本题全0，仅作质量证据）
     miss_table(s1, "Sheet1清洗后")
 
     # ---------- Sheet2 日注册 + 日总消费/CPA ----------
@@ -113,11 +100,6 @@ def main():
     daily_cost = daily_cost.groupby("日期", as_index=False)["消费额"].sum().rename(columns={"消费额": "日总消费"})
     s2 = s2.merge(daily_cost, on="日期", how="left")
     s2["日CPA"] = div(s2["日总消费"], s2["新注册数"])
-    # B类：消费/注册极端日（>P99 或 <P01，仅标记不删除，正是假日效应分析对象）
-    for col, label in [("日总消费", "消费极端日"), ("新注册数", "注册极端日")]:
-        hi, lo = float(s2[col].quantile(0.99)), float(s2[col].quantile(0.01))
-        n = tag(s2, (s2[col] > hi) | (s2[col] < lo), label)
-        print(f"B类 Sheet2: {label}阈值[P01={lo:.2f}, P99={hi:.2f}]，命中 {n} 天")
     miss_table(s2, "Sheet2清洗后")
 
     # ---------- Sheet3 关键词 ----------
@@ -134,13 +116,6 @@ def main():
     s3["是否零点击词"] = ((s3["消费额"] == 0) & (s3["点击量"] == 0)).astype(int)
     s3["CPC"] = div(s3["消费额"], s3["点击量"])
     s3["浏览深度"] = div(s3["浏览量"], s3["点击量"])
-    # B类：CPC极高（>P99，仅标记不删除）
-    cpc_p99 = float(s3["CPC"].quantile(0.99))
-    n = tag(s3, s3["CPC"] > cpc_p99, "CPC极高")
-    print(f"B类 Sheet3: CPC极高阈值(P99)={cpc_p99:.2f}元，命中 {n} 个词")
-    # C类：业务存疑（标记备查）
-    print(f"C类 Sheet3: 浏览<点击命中 {tag(s3, s3['浏览量'] < s3['点击量'], '浏览<点击')} 个词; "
-          f"零点击有浏览命中 {tag(s3, (s3['点击量'] == 0) & (s3['浏览量'] > 0), '零点击有浏览')} 个词")
     miss_table(s3, "Sheet3清洗后")
 
     # ---------- 时间维度表 ----------
