@@ -1,0 +1,3 @@
+# bp-neural-network — OpenAI/Codex adaptation
+display_name: bp-neural-network
+description: "反向传播前馈网络拟合非线性回归或分类。几十到几千样本、特征与目标复杂非线性时用；需可解释系数见 regression-f"

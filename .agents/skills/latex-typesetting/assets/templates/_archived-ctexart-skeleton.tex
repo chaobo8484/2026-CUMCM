@@ -1,0 +1,72 @@
+% 国赛论文骨架（全国大学生数学建模竞赛论文格式规范，2026 年修订稿）
+% 编译：XeLaTeX（中文）。电子版构建时注释掉“承诺书/编号专用页”两节，
+% 第一页必须为摘要专用页；纸质版取消注释并打印装订。
+\documentclass[a4paper,12pt]{ctexart}
+
+% ---- 第一条：A4，页边距上下左右 ≥2.5cm，左侧装订 ----
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% ---- 第三条：页码从摘要页起，页脚中部，阿拉伯数字从 1 连续编号 ----
+\fancypagestyle{mainmatter}{%
+  \fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+\newcommand{\startmainnumbering}{\clearpage\setcounter{page}{1}\pagestyle{mainmatter}}
+
+% ---- 第六条/第十一条：全文匿名。提交前 grep 学校、姓名、赛区 ----
+% ANONYMITY-CHECK: grep -r "大学\|学院\|赛区" 正文 附录 支撑材料
+
+\begin{document}
+
+% ===== 纸质版专用（电子版构建时注释掉下面两节） =====
+% ---- 第二条：第一页承诺书 ----
+\section*{承诺书}
+% 按当年官方专用页原样填入。
+
+% ---- 第二条：第二页编号专用页 ----
+\section*{编号专用页}
+% 按当年官方专用页原样填入。
+
+% ===== 电子版第一页必须为摘要专用页 =====
+% ---- 第三条：摘要 ≤1 页，含标题和关键词，无需英文 ----
+\startmainnumbering
+\section*{摘要}
+% 关键词：XXX；XXX；XXX
+
+% ---- 第四条：正文不要目录，不超过 30 页 ----
+\section{问题重述}
+\section{问题分析}
+\section{模型假设}
+\section{符号说明}
+\section{模型建立与求解}
+\section{结果分析与检验}
+\section{模型的评价与推广}
+\section{参考文献}
+% ---- 第七条：引用他人或公开资料（含网上资料）文内标注 + 文末规范列出 ----
+\begin{thebibliography}{99}
+\bibitem{ref1} % 作者. 题名[文献类型]. 出版地: 出版者, 年.
+\end{thebibliography}
+
+% ---- 第四条/第五条：附录页数不限，打印装订一起交 ----
+\appendix
+\section{附录：支撑材料文件列表}
+% 将支撑材料 RAR/ZIP 包内文件逐个列出（第十一条）。
+% - 程序源文件（含 EXCEL/SPSS 交互命令），须完整可运行，结果与论文相符
+% - 自主查阅的数据资料（赛题原始数据除外）
+% - 大篇幅中间结果图表
+\begin{itemize}
+  \item % 文件名 —— 说明
+\end{itemize}
+
+\section{附录：源程序代码}
+% 二选一，删其一：
+% （有程序）下面粘贴全部完整、可运行源程序：
+% \begin{verbatim}
+% \end{verbatim}
+% （无程序）本论文没有用到程序。
+% （无支撑材料时另注）本论文没有支撑材料。
+
+\end{document}

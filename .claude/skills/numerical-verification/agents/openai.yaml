@@ -1,0 +1,3 @@
+# numerical-verification — OpenAI/Codex adaptation
+display_name: numerical-verification
+description: "边界扫描与可复现实验评估猜想证据强度。用计算支持质疑或探索命题时用；找反例见 counterexample-search"

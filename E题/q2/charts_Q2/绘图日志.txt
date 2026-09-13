@@ -1,0 +1,9 @@
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-1_成本效益四象限.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-2_五类数量占比.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-3_各单元五类构成.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-4_各类投入与贡献.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-5_分类稳定性.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-6_类别指标分布.png
+  已保存: C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2\Q2-7_单元类别热力图.png
+
+Q2 图表全部完成 -> C:\Users\ZhangChaobo\desktop\CUMCM2026Problems\E题\q2\charts_Q2

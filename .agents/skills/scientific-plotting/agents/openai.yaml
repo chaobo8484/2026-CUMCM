@@ -1,0 +1,3 @@
+# scientific-plotting — OpenAI/Codex adaptation
+display_name: scientific-plotting
+description: "Matplotlib/Seaborn 色盲安全静态矢量图。需折线柱状散点直方箱线等投稿插图时用；带统计推断标注见 sta"

@@ -1,0 +1,3 @@
+# research-evidence — OpenAI/Codex adaptation
+display_name: research-evidence
+description: "单条断言外部取证：按后端阶梯检索抓取并输出证据卡。"

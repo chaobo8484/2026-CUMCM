@@ -1,0 +1,3 @@
+# ingest-inputs — OpenAI/Codex adaptation
+display_name: ingest-inputs
+description: "用户文件先过我：CSV/XLSX/TXT/PDF 解析归一，JPG 分类识数或转述，MP4 按参数抽帧，附质量报告与来源"

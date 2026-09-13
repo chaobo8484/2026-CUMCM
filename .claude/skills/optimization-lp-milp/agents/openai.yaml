@@ -1,0 +1,3 @@
+# optimization-lp-milp — OpenAI/Codex adaptation
+display_name: optimization-lp-milp
+description: "线性目标约束与整数决策交可复现求解器。问题可线性表达或线性化时用；非凸组合问题见 genetic-algorithm。"

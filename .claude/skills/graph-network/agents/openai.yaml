@@ -1,0 +1,3 @@
+# graph-network — OpenAI/Codex adaptation
+display_name: graph-network
+description: "最短路、最大流、中心性与社区分析。问题含路径流量关键节点时用；画流程架构示意图见 diagram-schematic。"

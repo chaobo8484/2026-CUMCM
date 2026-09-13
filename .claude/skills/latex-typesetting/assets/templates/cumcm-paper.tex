@@ -1,0 +1,138 @@
+% 国赛论文 starter（cumcmthesis v2.7 clean，2026 年修订稿规范）
+% 骨架冻结：不动 cumcmthesis.cls，不动边距/字体/标题样式。版式疼靠删内容解决。
+%
+% 编译（必须 XeLaTeX，至少两遍；推荐 latexmk）：
+%   纸质版（含承诺书/编号专用页，打印装订用）：
+%     latexmk -xelatex cumcm-paper
+%   电子版（第一页必须为摘要页，单文件 PDF 提交用）：
+%     将下一行换成 \documentclass[withoutpreface,bwprint]{cumcmthesis} 后再编
+%
+% 字体（开箱即用，无需手动装字体）：
+%   cls 调用 Times New Roman / Arial + simkai.ttf / simsun.ttc（Windows 自带）。
+%   Linux/macOS 无官方两文件时，下面 cumcm-fonts.sty 自动回退到系统现有中文字体
+%   （Songti SC / Noto Serif CJK SC / Fandol），直接编译。要官方原字形才需跑一次
+%   assets/scripts/setup-fonts.py（--copy-from <含两文件的目录> --dest userfonts）。
+%   用稿时把 assets/templates/cumcmthesis/ 整个目录随稿走（cls + sty 不拆）。
+%   字体替换警告必须认领。
+\documentclass{cumcmthesis}
+% 电子版提交时改用（去掉承诺书与编号专用页）：
+% \documentclass[withoutpreface,bwprint]{cumcmthesis}
+\usepackage{cumcm-fonts} % 官方字体缺失时自动回退；有官方字体时保持原样
+%
+% 标签命名空间：fig: / tab: / eq: / sec: ；交叉引用只用 \cref，不手写数字。
+%   display 公式被引用才编号；图宽只用 \linewidth 分数，不用绝对英寸。
+\documentclass{cumcmthesis}
+% 电子版提交时改用（去掉承诺书与编号专用页）：
+% \documentclass[withoutpreface,bwprint]{cumcmthesis}
+
+\title{TODO：论文题目}
+\tihao{TODO}                    % 题号：A/B/C/D/E 四选一填字母
+\baominghao{TODO}               % 12 位报名参赛队号
+\schoolname{TODO}               % 学校全称（电子版构建前必须清空匿名，见文末注释）
+\membera{TODO}
+\memberb{TODO}
+\memberc{TODO}
+\supervisor{TODO}
+\yearinput{2026}
+\monthinput{TODO}
+\dayinput{TODO}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+TODO：摘要。研究对象、主要方法、关键结果与结论，原则上不超过一页。
+摘要页起以阿拉伯数字从 1 连续编页码（cls 自动处理，不手动改）。
+
+\keywords{TODO\quad TODO\quad TODO}
+\end{abstract}
+
+% 2026 年规范：正文不要目录。下面一行保持注释。
+% \tableofcontents
+
+\section{问题重述}
+\label{sec:restate}
+TODO：准确、简洁重述赛题，不抄原题全文。
+
+\section{问题分析}
+\label{sec:analysis}
+TODO：研究思路、问题分解、总体技术路线。
+
+\section{模型假设}
+\label{sec:assumptions}
+\begin{enumerate}
+    \item TODO：假设一；
+    \item TODO：假设二。
+\end{enumerate}
+
+\section{符号说明}
+\label{sec:symbols}
+\begin{table}[htbp]
+    \centering
+    \caption{主要符号说明}
+    \label{tab:symbols}
+    \begin{tabular}{cc}
+        \toprule[0.8pt]
+        符号 & 含义 \\
+        \midrule[0.5pt]
+        $x$ & TODO：示例变量 \\
+        \bottomrule[0.8pt]
+    \end{tabular}
+\end{table}
+
+\section{模型建立与求解}
+\label{sec:model}
+TODO：模型、算法、求解过程和结果。引用示例如\cref{tab:symbols}、式\cref{eq:demo}。
+
+\begin{equation}
+E=mc^2
+\label{eq:demo}
+\end{equation}
+
+% 插图示例（文件放 figures/，相对宽度）：
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=.6\linewidth]{TODO-filename}
+%     \caption{TODO：图题}
+%     \label{fig:demo}
+% \end{figure}
+
+\section{模型检验与分析}
+\label{sec:validation}
+TODO：误差分析、敏感性分析、稳健性检验或其他验证。
+
+\section{模型评价与推广}
+\label{sec:evaluation}
+TODO：优点、局限、可推广方向。
+
+\begin{thebibliography}{9}
+    \bibitem{ref1}
+    TODO：作者.
+    \newblock 文献题目.
+    \newblock 出版信息, 年份.
+\end{thebibliography}
+% 文内引用资料（含网上资料）必须 \cite 标注 + 文末列出。无引用时删除此注释并确认。
+
+\section*{人工智能工具使用声明}
+TODO：依据竞赛期间有效的全国组委会规定填写；未使用时也应明确声明。
+
+\begin{appendices}
+
+\section{支撑材料文件列表}
+TODO：逐项列出文件名、格式及用途。无支撑材料时写“本论文没有支撑材料”。
+
+\section{源程序}
+TODO：附全部完整、可运行源程序。无程序时写“本论文没有用到程序”。
+% \begin{lstlisting}[language=matlab]
+% TODO：源程序全文
+% \end{lstlisting}
+
+\end{appendices}
+
+\end{document}
+
+% ===== 电子版匿名构建前检查（提交前逐项划掉） =====
+% - \schoolname / \membera / \memberb / \memberc / \supervisor 已清空或改为匿名
+% - 摘要/正文/附录全文 grep 学校、姓名、赛区零命中
+% - \documentclass 已换 [withoutpreface,bwprint]，第一页为摘要页

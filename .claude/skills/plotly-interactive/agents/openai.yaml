@@ -1,0 +1,3 @@
+# plotly-interactive — OpenAI/Codex adaptation
+display_name: plotly-interactive
+description: "缩放悬停联动的 Plotly 探索图。数据探索需交互或上万点需 WebGL 时用；定稿矢量图见 scientific-p"

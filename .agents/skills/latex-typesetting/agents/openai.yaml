@@ -1,0 +1,3 @@
+# latex-typesetting — OpenAI/Codex adaptation
+display_name: latex-typesetting
+description: "把内容填入官方 LaTeX 模板并编译出 PDF，按报错日志迭代修错。"

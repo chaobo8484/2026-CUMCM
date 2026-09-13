@@ -1,0 +1,19 @@
+{
+  "$schema": "mathx-coverage-1",
+  "assertion": "一句话断言（带定义域）",
+  "domain": "定义域描述",
+  "tolerance": 1e-08,
+  "tolerance_note": "浮点误差对真违反的阈值，跑前定",
+  "probes": [
+    {
+      "region": "内部|边界|退化|渐近|hard-instance",
+      "density": "网格 100x100 或 随机 N=1000",
+      "n": 1000,
+      "seed": 42,
+      "extreme": false,
+      "passed": true,
+      "near_miss": false
+    }
+  ],
+  "reproduced_failures": []
+}

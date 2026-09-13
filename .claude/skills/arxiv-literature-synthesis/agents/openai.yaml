@@ -1,0 +1,3 @@
+# arxiv-literature-synthesis — OpenAI/Codex adaptation
+display_name: arxiv-literature-synthesis
+description: "从引用图定理依赖梳理领域演化与开放问题。需理解关键依赖与研究前沿时用；建模背景综述见 literature-review"

@@ -1,0 +1,3 @@
+# reproducibility-checklist — OpenAI/Codex adaptation
+display_name: reproducibility-checklist
+description: "交稿前自检：环境、随机种子、数据、代码、图表与审稿视角。"

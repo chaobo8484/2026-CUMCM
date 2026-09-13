@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "skills": {
+    "ahp": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ahp/SKILL.md",
+      "computedHash": "b3b4e5be175a51a799e4055ba87de9dee02caa830dc4eeddae28a251432db948"
+    },
+    "arxiv-literature-synthesis": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/arxiv-literature-synthesis/SKILL.md",
+      "computedHash": "0c2f7bfe0c325d054efd511a7cd56fe20f06b358d038c75a2ecb4f816fac4b52"
+    },
+    "ask-mathx": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ask-mathx/SKILL.md",
+      "computedHash": "845a69a1d83405d491c80e2707acd4519f028ab9dd8b1af0d9000cd187346035"
+    },
+    "bp-neural-network": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/bp-neural-network/SKILL.md",
+      "computedHash": "9d565a85a8fc49024249c41c3aa49fb723309a452b663abdc1aa6e51f1d68368"
+    },
+    "chart-decision": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/chart-decision/SKILL.md",
+      "computedHash": "4708eef9ca03eed152f8a0b525f297c8988289d11a6ee6c83b3ffc1bd5e44104"
+    },
+    "citation-bibliography": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/citation-bibliography/SKILL.md",
+      "computedHash": "099a1a40eb5d3e6a945551571ff56f8944662b7dd156b351292721ca70afe096"
+    },
+    "conjecture-formulation": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/conjecture-formulation/SKILL.md",
+      "computedHash": "a2cd141da6284c47ca93fec6de331be86cb14a848682cae009aa9cb12633ffb6"
+    },
+    "counterexample-search": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/counterexample-search/SKILL.md",
+      "computedHash": "1e0839f1f4a97b83186f3e3fc1f605eb1629510ac62507baf82d3adfa0c2c332"
+    },
+    "diagram-schematic": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/diagram-schematic/SKILL.md",
+      "computedHash": "4725d06827b17c2ca8559ea75f4a130d6b2130b42a0e7d0ac20f035cd222fd65"
+    },
+    "differential-equation": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/differential-equation/SKILL.md",
+      "computedHash": "8929aa776d8219ed9ac148be01afcf1213d4faf94e30d8872fe89f3e9030ddc8"
+    },
+    "evaluation-entropy-topsis": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/evaluation-entropy-topsis/SKILL.md",
+      "computedHash": "abe98fc12c371b22c437f258acdd7c045aed78df209b775b87b261b4cf533647"
+    },
+    "figure-table-generation": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/figure-table-generation/SKILL.md",
+      "computedHash": "baf4fbb6265ecdb3a5e16a69f8131c307b0653318d93627e301d234b2abb87c0"
+    },
+    "genetic-algorithm": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/genetic-algorithm/SKILL.md",
+      "computedHash": "a094c2bbba1098e62e3cc87e0459360afc8278d152e9bdfc8f34551ea8403de6"
+    },
+    "graph-network": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/graph-network/SKILL.md",
+      "computedHash": "a5cc972e0b0109582f3012ac04a19715eda860a6e1cc9ce54492f01407610539"
+    },
+    "gray-prediction": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gray-prediction/SKILL.md",
+      "computedHash": "f85905f7b20b62fd86bbd706b10eb4bdeecd988072ea954e7d338c3b4e363536"
+    },
+    "ingest-inputs": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ingest-inputs/SKILL.md",
+      "computedHash": "aef0351bca2c582285e612e56a0fe746e47ad3278a2c94cdee4f1a101161c37c"
+    },
+    "latex-typesetting": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/latex-typesetting/SKILL.md",
+      "computedHash": "bb504094e7990cb6f5e44dcfc0a897b799c57268ae95f3ec83f2ed98cb025493"
+    },
+    "literature-review": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/literature-review/SKILL.md",
+      "computedHash": "421b4b18a03afbee01f257036fbf05fe33e56b1f262aec5c5539d0633d4deca6"
+    },
+    "monte-carlo-simulation": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/monte-carlo-simulation/SKILL.md",
+      "computedHash": "053958635279447f5f25a5527de97bc9a3ee7744b3f692d496f138ef1d980470"
+    },
+    "numerical-verification": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/numerical-verification/SKILL.md",
+      "computedHash": "05811a4b321feb427e326303bb5d322146baffabea0c31f45a1ff703c16bea7c"
+    },
+    "optimization-lp-milp": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/optimization-lp-milp/SKILL.md",
+      "computedHash": "d43779ea5d4fda3b68046addb66c253abb2165ba5f7d9d3e62053ed79e6d7ce0"
+    },
+    "paper-outline": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/paper-outline/SKILL.md",
+      "computedHash": "d4fa2891a1f5acdf90f65c689de3967bc6bef45cc8ab7e33815e3f2abacd7f92"
+    },
+    "plotly-interactive": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/plotly-interactive/SKILL.md",
+      "computedHash": "b7b490ab2fc49de082e36b2df54e790e3c82187e6b73e2569b09af450c25ba30"
+    },
+    "polish-proofread": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/polish-proofread/SKILL.md",
+      "computedHash": "ede534d388194db60d5f479558ec31a47c0a6776b97c297caec957883f475987"
+    },
+    "proof-assistant": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/proof-assistant/SKILL.md",
+      "computedHash": "3b368ad4e9057e3e2b8adbdadf169bb365667e5cd01e582f2353f5ff994a5caa"
+    },
+    "publication-figure": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/publication-figure/SKILL.md",
+      "computedHash": "f9ab3d4eac567fe3580079a2d256f8fbd107fd88355064d937f0d6781d42f942"
+    },
+    "regression-family": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/regression-family/SKILL.md",
+      "computedHash": "73728b15cb4c082d242ba44ce8dbb3afe22b630069928b7ae15edcb04401d00f"
+    },
+    "reproducibility-checklist": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/reproducibility-checklist/SKILL.md",
+      "computedHash": "f2880831d2535245ff693eabc240d74824ae71780de272401f0ded7792568402"
+    },
+    "research-evidence": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/research-evidence/SKILL.md",
+      "computedHash": "69ca41ebcae79c68fd9d3930d277c0028ed00e968509b719126d5e3a476d6be1"
+    },
+    "scientific-plotting": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/scientific-plotting/SKILL.md",
+      "computedHash": "7491e586886372364a4b79b50a975cd5e15c810be0f9a56d9f926abfddc01c72"
+    },
+    "setup-mathx": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/setup-mathx/SKILL.md",
+      "computedHash": "822f3c68fd92ce8a88cb7cdd5dd96a5c80583c09d75b9e4b98e2bbb36a4b4bea"
+    },
+    "statistical-plot": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/statistical-plot/SKILL.md",
+      "computedHash": "23bf6ce0c963f487f33f75d4acb4c8c9c9abb6e9d58c15eb0b3f58a4e1ddd8a3"
+    },
+    "symbolic-computation": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/symbolic-computation/SKILL.md",
+      "computedHash": "b88c553619a8de61808754fb14ad1dc32e740fe1d4e2f01591249ae9f57bad0b"
+    },
+    "time-series-arima": {
+      "source": "chaobo8484/MathX-math-model-skills",
+      "sourceType": "github",
+      "skillPath": "skills/time-series-arima/SKILL.md",
+      "computedHash": "fc07dc9664e541ae1ae7722f8abc697d0951a8f843c12300dc43b62bd3eb6040"
+    }
+  }
+}

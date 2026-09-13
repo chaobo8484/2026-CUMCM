@@ -1,0 +1,3 @@
+# regression-family — OpenAI/Codex adaptation
+display_name: regression-family
+description: "OLS、岭、Lasso、Logistic 的拟合选择与诊断。需解释变量关系、做变量选择或概率分类时用；无监督分群见 cl"

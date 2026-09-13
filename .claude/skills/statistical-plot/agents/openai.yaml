@@ -1,0 +1,3 @@
+# statistical-plot — OpenAI/Codex adaptation
+display_name: statistical-plot
+description: "分布相关检验残差 ROC 与样本量 p 值置信区间同图呈现。统计结论需与 N、效应量同时可读时用。"

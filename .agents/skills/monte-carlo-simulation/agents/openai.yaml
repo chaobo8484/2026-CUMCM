@@ -1,0 +1,3 @@
+# monte-carlo-simulation — OpenAI/Codex adaptation
+display_name: monte-carlo-simulation
+description: "随机抽样估计概率、期望与风险。解析解困难但随机变量与分布明确时用。"

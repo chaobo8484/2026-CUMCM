@@ -1,0 +1,3 @@
+# figure-table-generation — OpenAI/Codex adaptation
+display_name: figure-table-generation
+description: "把分析结果整理成带题注引用的投稿级图表和 booktabs 表格。"

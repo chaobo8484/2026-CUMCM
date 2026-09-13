@@ -1,0 +1,3 @@
+# ahp — OpenAI/Codex adaptation
+display_name: ahp
+description: "用成对比较层次结构做主观多准则排序，经判断矩阵算特征权重并报告一致性。准则靠专家经验赋权时用；全实测指标要客观赋权见 e"

@@ -1,0 +1,3 @@
+# symbolic-computation — OpenAI/Codex adaptation
+display_name: symbolic-computation
+description: "SymPy 化简求导积分解方程并导出 LaTeX。需可复核的符号推导时用。"

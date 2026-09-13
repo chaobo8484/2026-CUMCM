@@ -1,0 +1,3 @@
+# setup-mathx — OpenAI/Codex adaptation
+display_name: setup-mathx
+description: "第一次用先跑我：绑定数据目录、模板版本、绘图后端和证据后端。"

@@ -1,0 +1,3 @@
+# citation-bibliography — OpenAI/Codex adaptation
+display_name: citation-bibliography
+description: "清洗 BibTeX，核对文内引用与参考文献表双向一致。"

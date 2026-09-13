@@ -1,0 +1,59 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cumcm-fonts}[2026/09/07 v1.0 CJK fallback fonts for cumcmthesis]
+% cumcmthesis.cls 按文件名调用 simkai.ttf / simsun.ttc（Windows 自带）。
+% Linux / macOS 无此二文件时 XeLaTeX 报 fontspec Error。本包在导言区按链
+% 自动回退，全程不动 cumcmthesis.cls。
+%
+% 用法（starter 已内置）：放在 \documentclass{cumcmthesis} 之后、
+% \begin{document} 之前：
+%   \usepackage{cumcm-fonts}
+% 要求 fontspec + xeCJK 已加载（cumcmthesis 经 ctex 自动加载）。
+%
+% 回退链（逐个 \IfFontExistsTF 探测，命中即停）：
+%   song：simsun.ttc → Songti SC → STSong → Noto Serif CJK SC → FandolSong-Regular
+%   kai ：simkai.ttf → Kaiti SC → STKaiti → FandolKai-Regular → FandolSong-Regular
+% 说明：
+% - 题注用的 \songti 是 ctex 主字体，由 ctex 自己跨平台处理，不归本包管；
+%   本包只修 cls 自定义的 song / kai 两族（\song、\kai 及承诺书页用字）。
+% - 回退字形与官方有细微差异，内容评审不受影响；要官方原字形，跑
+%   assets/scripts/setup-fonts.py 把两文件装进系统字体目录（每台机器一次）。
+% - 链上全缺则保留 cls 原设置，照旧由 texlog_parse 报字体缺失。
+\newif\ifcumcm@songset \cumcm@songsetfalse
+\newif\ifcumcm@kaiset \cumcm@kaisetfalse
+% ---- song ----
+\IfFontExistsTF{simsun.ttc}{\cumcm@songsettrue}{}
+\ifcumcm@songset\else
+  \IfFontExistsTF{Songti SC}{%
+    \setCJKfamilyfont{song}[AutoFakeBold]{Songti SC}\cumcm@songsettrue}{}
+\fi
+\ifcumcm@songset\else
+  \IfFontExistsTF{STSong}{%
+    \setCJKfamilyfont{song}[AutoFakeBold]{STSong}\cumcm@songsettrue}{}
+\fi
+\ifcumcm@songset\else
+  \IfFontExistsTF{Noto Serif CJK SC}{%
+    \setCJKfamilyfont{song}[AutoFakeBold]{Noto Serif CJK SC}\cumcm@songsettrue}{}
+\fi
+\ifcumcm@songset\else
+  \IfFontExistsTF{FandolSong-Regular}{%
+    \setCJKfamilyfont{song}[AutoFakeBold]{FandolSong-Regular}\cumcm@songsettrue}{}
+\fi
+% ---- kai ----
+\IfFontExistsTF{simkai.ttf}{\cumcm@kaisettrue}{}
+\ifcumcm@kaiset\else
+  \IfFontExistsTF{Kaiti SC}{%
+    \setCJKfamilyfont{kai}[AutoFakeBold]{Kaiti SC}\cumcm@kaisettrue}{}
+\fi
+\ifcumcm@kaiset\else
+  \IfFontExistsTF{STKaiti}{%
+    \setCJKfamilyfont{kai}[AutoFakeBold]{STKaiti}\cumcm@kaisettrue}{}
+\fi
+\ifcumcm@kaiset\else
+  \IfFontExistsTF{FandolKai-Regular}{%
+    \setCJKfamilyfont{kai}[AutoFakeBold]{FandolKai-Regular}\cumcm@kaisettrue}{}
+\fi
+\ifcumcm@kaiset\else
+  \IfFontExistsTF{FandolSong-Regular}{%
+    \setCJKfamilyfont{kai}[AutoFakeBold]{FandolSong-Regular}\cumcm@kaisettrue}{}
+\fi
+\endinput

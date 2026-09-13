@@ -1,0 +1,3 @@
+# proof-assistant — OpenAI/Codex adaptation
+display_name: proof-assistant
+description: "拆引理、选证明策略并显式标记未验证缺口。需证明大纲依赖图或形式化入口时用；数值证据见 numerical-verific"

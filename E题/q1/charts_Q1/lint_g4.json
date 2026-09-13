@@ -1,0 +1,19 @@
+{
+  "script": "E题\\scripts_Q1\\g4_jaccard.py",
+  "gates": {
+    "no_banned_cmap": true,
+    "banned_found": [],
+    "no_redgreen_critical": true,
+    "has_savefig": true,
+    "dpi_ge_floor": true,
+    "dpi_values": [
+      300,
+      300
+    ],
+    "bbox_checked": true,
+    "style_block_reused": false,
+    "vector_export": true
+  },
+  "verdict": "PASS — 源码风格过；灰度/bbox 仍需人眼",
+  "note": "静态检查不运行代码；视觉验收仍按 SKILL 目检"
+}

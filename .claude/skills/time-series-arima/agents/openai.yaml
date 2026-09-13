@@ -1,0 +1,3 @@
+# time-series-arima — OpenAI/Codex adaptation
+display_name: time-series-arima
+description: "带平稳性诊断与区间预测的 ARIMA/SARIMA 建模。等间隔 30 点以上、有趋势或季节性时用；极小样本见 gray"

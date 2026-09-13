@@ -12,7 +12,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "E题" / "附件" / "附件1.xlsx"
+SRC = ROOT / "E题" / "题目" / "附件" / "附件1.xlsx"
 OUT = ROOT / "E题" / "clean_data"
 OUT.mkdir(parents=True, exist_ok=True)
 
